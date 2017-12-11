@@ -1,0 +1,30 @@
+<ion-view view-title="Order Details">
+	<ion-content>
+
+		<div class="main-content">
+			<div class="card">
+				<div class="item item-text-wrap">
+					Dispatch Id: #{{DispatchSingleCtrl.dispatch.id}}
+				</div>
+			</div>
+			<div class="list">				
+			  	<div class="list list-inset">
+				    <div class="item animated zoomIn">
+				    	Dispatch Date: {{DispatchSingleCtrl.dispatch.dispatch_date}}
+				  	</div>
+					<div class="item animated zoomIn">
+				    	Party Name: {{DispatchSingleCtrl.dispatch.party}}
+				  	</div>
+					<div class="item animated zoomIn">
+				    	Total Quantity: {{DispatchSingleCtrl.dispatch.total_qty}}
+				  	</div>
+					<div class="item animated zoomIn">
+				    	Total Amount: &#8377; {{DispatchSingleCtrl.dispatch.grand_total}}
+				  	</div>
+				</div>
+			</div>
+			
+		</div>
+	
+	</ion-content>
+</ion-view>

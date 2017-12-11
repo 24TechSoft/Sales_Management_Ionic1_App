@@ -1,0 +1,38 @@
+<ion-view view-title="Dashboard">
+	<ion-content>
+		<div class="main-content">
+
+			<div class="card custom-card">
+				<div class="item item-text-wrap white-text">
+					Welcome {{MenuCtrl.usertyp}} to the dashboard!
+				</div>
+			</div>
+			<div class="list animated zoomIn">
+				<div class="item item-divider list-head-blue">
+			   		Dispatch Details {{MenuCtrl.dispatchDetails.salesman}} == {{MenuCtrl.userid}}
+			  	</div>
+				
+			  	<div class="list list-inset">
+				    <a class="item" ng-repeat ="dispatchDtls in MenuCtrl.dispatchDetails" href="#app/dispatch/single/{{dispatchDtls.id}}">
+				    	Order Id: #{{dispatchDtls.order_id}}.<br/>
+				    	Dispatch Date: {{dispatchDtls.dispatch_date}}.
+				  	</a>
+				</div>
+			</div>
+			<div class="list animated zoomIn">
+				<div class="item item-divider list-head-orange">
+			   		Pending Order Details
+			  	</div>
+				
+			  	<div class="list list-inset">
+				    <a class="item" ng-repeat ="orderDtls in MenuCtrl.orderDetails" href="#app/do/{{orderDtls.id}}" ng-if="orderDtls.salesman==MenuCtrl.userid">
+				    	Order Id: #{{orderDtls.id}}.<br/>
+				    	Delivery Date: {{orderDtls.delivery_date}}.
+				  	</a>
+				</div>
+			</div>
+			
+		</div>
+
+	</ion-content>
+</ion-view>

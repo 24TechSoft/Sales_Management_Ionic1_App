@@ -1,0 +1,72 @@
+{
+    "name": "satyam",
+    "version": "1.1.1",
+    "description": "satyam: An Ionic project",
+    "dependencies": {
+        "@angular/core": "^4.3.1",
+        "@ionic-native/core": "^4.0.0",
+        "@ionic-native/facebook": "^4.1.0",
+        "@ionic-native/local-notifications": "^4.1.0",
+        "@ionic-native/unique-device-id": "^4.1.0",
+        "angular-chart.js": "^1.1.1",
+        "animate.css": "^3.5.2",
+        "cordova-android": "^6.2.3",
+        "cordova-plugin-app-event": "file:node_modules\\cordova-plugin-app-event",
+        "cordova-plugin-background-mode": "git+https://github.com/katzer/cordova-plugin-background-mode.git",
+        "cordova-plugin-badge": "git+https://github.com/katzer/cordova-plugin-badge.git",
+        "cordova-plugin-compat": "^1.0.0",
+        "cordova-plugin-console": "1.0.5",
+        "cordova-plugin-datepicker": "^0.9.3",
+        "cordova-plugin-device": "1.1.4",
+        "cordova-plugin-geolocation": "^2.4.3",
+        "cordova-plugin-local-notifications": "^1.0.0",
+        "cordova-plugin-splashscreen": "~4.0.1",
+        "cordova-plugin-statusbar": "2.2.1",
+        "cordova-plugin-uniquedeviceid": "^1.3.2",
+        "cordova-plugin-whitelist": "1.3.1",
+        "cordova-plugin-x-toast": "^2.6.0",
+        "de.appplant.cordova.plugin.local-notification": "git+https://github.com/katzer/cordova-plugin-local-notifications.git",
+        "gulp": "^3.5.6",
+        "gulp-concat": "^2.2.0",
+        "gulp-minify-css": "^0.3.0",
+        "gulp-rename": "^1.2.0",
+        "gulp-sass": "^2.0.4",
+        "ionic-plugin-keyboard": "~2.2.1",
+        "rxjs": "^5.0.1",
+        "zone.js": "^0.8.4"
+    },
+    "devDependencies": {
+        "bower": "^1.3.3",
+        "gulp-util": "^2.2.14",
+        "shelljs": "^0.3.0"
+    },
+    "cordovaPlugins": [
+        "cordova-plugin-whitelist",
+        "cordova-plugin-console",
+        "cordova-plugin-statusbar",
+        "cordova-plugin-device",
+        "cordova-plugin-splashscreen",
+        "ionic-plugin-keyboard"
+    ],
+    "cordovaPlatforms": [],
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-console": {},
+            "cordova-plugin-device": {},
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-whitelist": {},
+            "ionic-plugin-keyboard": {},
+            "cordova-plugin-datepicker": {},
+            "cordova-plugin-uniquedeviceid": {},
+            "cordova-plugin-x-toast": {},
+            "de.appplant.cordova.plugin.local-notification": {},
+            "cordova-plugin-background-mode": {},
+            "cordova-plugin-badge": {},
+            "cordova-plugin-geolocation": {}
+        },
+        "platforms": [
+            "android"
+        ]
+    }
+}

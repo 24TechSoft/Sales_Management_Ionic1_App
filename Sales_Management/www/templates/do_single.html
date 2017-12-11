@@ -1,0 +1,43 @@
+<ion-view view-title="Order Details">
+	<ion-content>
+
+		<div class="main-content">
+			<div class="card">
+				<div class="item item-text-wrap">
+					Order Id: #{{DOSingleCtrl.do.order_id}}
+				</div>
+			</div>
+			<div class="list">				
+			  	<div class="list list-inset">
+				    <div class="item animated zoomIn">
+				    	Delivery Date: {{DOSingleCtrl.do.delivery_date}}
+				  	</div>
+					<div class="item animated zoomIn">
+				    	Party Name: {{DOSingleCtrl.do.party_name}}
+				  	</div>
+					<div class="item animated zoomIn">
+				    	Total Quantity: {{DOSingleCtrl.do.total_qty}}
+				  	</div>
+				  	<div class="item animated zoomIn">
+				    	Amount Paid: &#8377; {{DOSingleCtrl.do.amount_paid}}
+				  	</div>
+					<div class="item animated zoomIn">
+				    	Total Amount: &#8377; {{DOSingleCtrl.do.total_amt}}
+				  	</div>
+				  	
+				  	<div class="item animated zoomIn">
+				    	Address: {{DOSingleCtrl.do.address}}<br/>
+				    	State: {{DOSingleCtrl.do.state}}<br/>
+				    	Pin: {{DOSingleCtrl.do.pin}}
+				  	</div>
+				  	<div class="item animated zoomIn">
+				    	Status: {{DOSingleCtrl.do.status}}
+				  	</div>
+
+				</div>
+			</div>
+			
+		</div>
+	
+	</ion-content>
+</ion-view>

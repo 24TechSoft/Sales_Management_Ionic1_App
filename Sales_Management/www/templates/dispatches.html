@@ -1,0 +1,18 @@
+<ion-view view-title="Dispatch List">
+	<ion-content>
+		<div class="form-content">
+			<div class="list animated zoomIn">
+				<div class="item item-divider list-head-orange">
+			   		Dispatch List
+			  	</div>
+				
+			  	<div class="list list-inset">
+				    <a class="item" ng-repeat ="dispatchAll in MenuCtrl.dispatchAll" href="#app/dispatch/single/{{dispatchAll.id}}">
+				    	Order Id: #{{dispatchAll.order_id}}.<br/>
+				    	Dispatch Date: {{dispatchAll.dispatch_date}}.
+				  	</a>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

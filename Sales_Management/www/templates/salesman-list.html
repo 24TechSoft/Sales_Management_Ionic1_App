@@ -1,0 +1,26 @@
+<ion-view view-title="Salesman List">
+	<ion-content>
+		<div class="form-content">
+			<div class="list animated zoomIn">
+				<div class="item item-divider list-head-orange">
+			   		Salesman List
+			  	</div>
+				
+			  	<div class="list list-inset">
+			  		<table class="table"> 
+			  			<thead>
+			  				<th>ID</th><th>Salesman</th><th>Action</th>
+			  			</thead>
+			  			<tbody class="tbody">
+			  				<tr ng-repeat="salesman in MenuCtrl.salesmanAll">
+			  					<td>#{{salesman.id}}</td>
+			  					<td>{{salesman.name}}</td>
+			  					<td><a href="#app/track/salesman/{{salesman.id}}">Track</a></td>
+			  				</tr>
+			  			</tbody>
+			  		</table>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

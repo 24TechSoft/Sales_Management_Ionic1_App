@@ -1,0 +1,61 @@
+<ion-view view-title="Book Order">
+	<ion-content>
+		<div class="form-content padding">
+			<div class="list form-book-order">
+				<label class="item item-input item-stacked-label animated zoomIn">
+				    <span class="input-label m">Booking Date</span>
+				    <input type="text" class="custom-input" ng-click="OpenDatePicker()" name="booking_date" id="booking_date" ng-focus="hideError('booking_date')">
+				    <p class="valid red-text animated shake" id="error-msg-booking_date">*This field is required!</p>
+				</label>
+				<label class="item item-input item-stacked-label animated zoomIn">
+				     <span class="input-label m">Party</span><br>
+				    <select class="custom-input" id="party" ng-focus="hideError('party')">
+				    	<option>Select One</option>
+				      	<option value="{{allParty.id}}" ng-repeat="allParty in OrderBookCtrl.partyAll">{{allParty.name}}</option>
+				    </select>
+				
+				    <p class="valid red-text animated shake" id="error-msg-party">*This field is required!</p>
+				</label>
+				<label class="item item-input item-stacked-label animated zoomIn">
+				     <span class="input-label m">Salesman</span><br>
+				    <select class="custom-input" id="salesman" ng-focus="hideError('salesman')">
+				    	<option>Select One</option>
+				      	<option value="{{allSalesman.id}}" ng-repeat="allSalesman in OrderBookCtrl.salesmanAll">{{allSalesman.name}}</option>
+				    </select>
+				
+				    <p class="valid red-text animated shake" id="error-msg-salesman">*This field is required!</p>
+				</label>
+				<label class="item item-input item-stacked-label animated zoomIn">
+				    <span class="input-label m">Quantity</span>
+				    <input type="text" class="custom-input" id="quantity" ng-model="data.quantity" ng-focus="hideError('quantity')" ng-blur = "calculate()" is-number>
+				    <p class="valid red-text animated shake" id="error-msg-quantity">*This field is required!</p>
+				</label>
+				<label class="item item-input item-stacked-label animated zoomIn">
+				    <span class="input-label m">Rate</span>
+				    <input type="text" class="custom-input" id="rate" ng-model="data.rate" ng-focus="hideError('rate')" ng-blur = "calculate()" is-number>
+				    <p class="valid red-text animated shake" id="error-msg-rate">*This field is required!</p>
+				</label>
+				<label class="item item-input item-stacked-label animated zoomIn">
+				    <span class="input-label m">Total Value</span>
+				    <input type="text" class="custom-input" id="total_value" ng-model="data.total_value" ng-focus="hideError('value')" readonly="readonly" is-number>
+				    <p class="valid red-text animated shake" id="error-msg-value">*This field is required!</p>
+				</label>
+				<label class="item item-input item-stacked-label animated zoomIn">
+				     <span class="input-label m">Type</span><br>
+				    <select class="custom-input" id="type" ng-focus="hideError('type')">
+				    	<option>Select One</option>
+				    	<option value="for">for</option>
+				    	<option value="ex_factory">ex_factory</option>
+				      	
+				    </select>
+				
+				    <p class="valid red-text animated shake" id="error-msg-type">*This field is required!</p>
+				</label>
+			</div>
+			<button class="button button-full button-dark" ng-click="orderBook()">
+			  Submit
+			</button>
+		</div>
+			
+	</ion-content>
+</ion-view>

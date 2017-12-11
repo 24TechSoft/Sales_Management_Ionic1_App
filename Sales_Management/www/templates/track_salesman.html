@@ -1,0 +1,9 @@
+<ion-view view-title="Map">
+	<ion-content>
+		<div id="map" data-tap-disabled="true"></div>
+	</ion-content>
+	<div class="bar bar-footer" style="background: transparent;">
+	  <button class="button button-positive pull-left" ng-click="track({{TrackSalesmanCtrl.track_id}})">View Route</button>
+	  <button class="button button-assertive" ng-click="currentPosition({{TrackSalesmanCtrl.track_id}})">Current Position</button>
+	</div>
+</ion-view>

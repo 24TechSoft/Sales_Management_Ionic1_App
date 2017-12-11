@@ -1,0 +1,18 @@
+<ion-view view-title="Delivery Order List">
+	<ion-content>
+		<div class="form-content">
+			<div class="list animated zoomIn">
+				<div class="item item-divider list-head-orange">
+			   		Delivery Order List
+			  	</div>
+				<div class="list list-inset">
+				    <a class="item" ng-repeat ="deliveryOrder in MenuCtrl.deliveryOrders" href="#app/do/{{deliveryOrder.id}}">
+				    	Order Id: #{{deliveryOrder.id}}.<br/>
+				    	Delivery Date: {{deliveryOrder.delivery_date}}.<br/>
+				    	Status: <label class="blue">{{deliveryOrder.status}}</label>
+				  	</a>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

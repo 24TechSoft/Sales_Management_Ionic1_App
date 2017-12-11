@@ -1,0 +1,42 @@
+<ion-view view-title="Order Details">
+	<ion-content>
+
+		<div class="main-content">
+			<div class="card">
+				<div class="item item-text-wrap">
+					Order Id: #{{OrderSingleCtrl.order.id}}
+				</div>
+			</div>
+			<div class="list">				
+			  	<div class="list list-inset">
+				    <div class="item animated zoomIn">
+				    	Order Date: {{OrderSingleCtrl.order.order_date}}
+				  	</div>
+					<div class="item animated zoomIn">
+				    	Party Name: {{OrderSingleCtrl.order.party}}
+				  	</div>
+					<div class="item animated zoomIn">
+				    	Total Quantity: {{OrderSingleCtrl.order.quantity}}
+				  	</div>
+				  	<div class="item animated zoomIn">
+				    	Rate: &#8377; {{OrderSingleCtrl.order.rate}}
+				  	</div>
+					<div class="item animated zoomIn">
+				    	Total Amount: &#8377; {{OrderSingleCtrl.order.total_value}}
+				  	</div>
+				  	<div class="item animated zoomIn">
+				    	Type: {{OrderSingleCtrl.order.type}}
+				  	</div>
+				  	<div class="item animated zoomIn">
+				    	Status: <label class="green" ng-if="OrderSingleCtrl.order.status == 'Order Complete'">{{OrderSingleCtrl.order.status}}</label><label class="red" ng-if="OrderSingleCtrl.order.status == 'Pending'">{{OrderSingleCtrl.order.status}}</label>
+				  	</div>
+				  	<div class="item animated zoomIn">
+				    	Last Dispatch: {{OrderSingleCtrl.order.dispatch_date}}
+				  	</div>
+				</div>
+			</div>
+			
+		</div>
+	
+	</ion-content>
+</ion-view>

@@ -1,0 +1,84 @@
+<ion-view view-title="Super Admin">
+	<ion-content>
+
+		<div class="main-content">
+			<ion-slide-box>
+				<ion-slide>
+
+					<H4 class="float-text left">Lorem ispum dolor sit amet!</H4>
+					<p class="float-text-p">Lorem ispum dolor sit amet!</p>
+			    	<img src="img/banners/3.jpg" alt="" class="img-100" style="height: 160px">
+			  	</ion-slide>
+			  	<ion-slide>
+			  		<H4 class="float-text right">Lorem ispum dolor sit amet!</H4>
+			    	<img src="img/banners/2.jpg" alt="" class="img-100" style="height: 160px">
+			  	</ion-slide>
+			  	<ion-slide>
+			  		<H4 class="float-text left">Lorem ispum dolor sit amet!</H4>
+			    	<img src="img/banners/1.jpg" alt="" class="img-100" style="height: 160px">
+			  	</ion-slide>
+			</ion-slide-box>
+			<div class="card">
+				<div class="item item-text-wrap">
+					Welcome {{MenuCtrl.usertyp}} to the dashboard!
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-50 animated bounceIn">
+					<a href="#/app/reports">
+					<button class="button-custom button button-block button-white">
+					 REPORTS
+					</button>
+					</a>
+				</div>
+				<div class="col col-50 animated bounceIn">
+					<button class="button-custom button button-block button-white" ng-click="orders()">
+					 BOOK ORDERS
+					 </button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col col-50 animated bounceIn">
+					<button class="button-custom button button-block button-white" ng-click="deliveryOrders()">
+					 PENDING DOs
+					</button>
+				</div>
+				<div class="col col-50 animated bounceIn">
+						<button class="button-custom button button-block button-white" ng-click="dispatches()">
+						DISPATCHES
+						</button>
+				</div>	
+			</div>
+			
+
+			<!-- <div class="list">
+				<div class="item item-divider list-head-blue">
+			   		Dispatch Details
+			  	</div>
+				
+			  	<div class="list list-inset">
+				    <a class="item" ng-repeat ="dispatchDtls in DashboardCtrl.dispatchDetails" href="#app/dispatch/single/{{dispatchDtls.id}}">
+				    	Order Id: #{{dispatchDtls.order_id}}.<br/>
+				    	Dispatch Date: {{dispatchDtls.dispatch_date}}.
+				  	</a>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item item-divider list-head-orange">
+			   		Pending Order Details
+			  	</div>
+				
+			  	<div class="list list-inset">
+				    <a class="item" ng-repeat ="orderDtls in DashboardCtrl.orderDetails" href="#app/order/single/{{orderDtls.id}}">
+				    	Order Id: #{{orderDtls.id}}.<br/>
+				    	Order Date: {{orderDtls.order_date}}.
+				  	</a>
+				</div>
+			</div> -->
+			
+		</div>
+
+	</ion-content>
+</ion-view>

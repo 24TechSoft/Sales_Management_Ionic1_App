@@ -1,0 +1,19 @@
+<ion-view view-title="Book Order List">
+	<ion-content>
+		<div class="form-content">
+			<div class="list animated zoomIn">
+				<div class="item item-divider list-head-orange">
+			   		Order List
+			  	</div>
+				
+			  	<div class="list list-inset">
+				    <a class="item" ng-repeat ="orderAll in MenuCtrl.orderAll" href="#app/order/single/{{orderAll.id}}" ng-if="MenuCtrl.userid==orderAll.salesman || MenuCtrl.usertyp =='super_admin'">
+				    	Order Id: #{{orderAll.id}}.<br/>
+				    	Order Date: {{orderAll.order_date}}.<br>
+				    	Status: <label class="green" ng-if="orderAll.status == 'Order Complete'">{{orderAll.status}}</label><label class="red" ng-if="orderAll.status == 'Pending'">{{orderAll.status}}</label>
+				  	</a>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
